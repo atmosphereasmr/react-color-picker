@@ -1,0 +1,174 @@
+button:active { outline:0 !important; background-color: auto !important}
+
+.App {
+  text-align: center;
+}
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.no-hover:hover {
+  background-color: transparent !important;
+}
+
+.color-picker-container {
+  width: 100%;
+  height: 300px;
+  background-color: skyblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.color-holder {
+  width: 120px;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 5px;
+  flex-wrap: wrap;
+  background-color: white;
+}
+.color-box {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 5px;
+  border: 1px solid rgb(20,20,20);
+  margin-left: 5px;
+}
+.color-box .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.color-box .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: lightgray transparent transparent transparent;
+}
+.color-box:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+.color-box-left {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.color-box-left .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  right: 125%;
+  bottom: -25%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.color-box-left .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 35%;
+  left: 100%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent lightgrey;
+}
+.color-box-left:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+.color-box-right {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.color-box-right .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  left: 125%;
+  bottom: -25%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.color-box-right .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 35%;
+  right: 100%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent lightgray transparent transparent;
+}
+.color-box-right:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+.dropdown-header {
+  font-size: 16px !important;
+  font-weight: normal;
+  color: grey !important;
+}
+@media screen and (max-width: 576px) {
+  .dropdown-menu {width: 100% !important;}
+  .color-holder {width: 100% !important;}
+  .color-box {width: 50px !important; height: 50px !important;}
+  .color-box-left {width: 50px !important; height: 50px !important;}
+  .color-box-right {width: 50px !important; height: 50px !important;}
+ }
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
