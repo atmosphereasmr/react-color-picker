@@ -33,7 +33,7 @@ export default class App extends Component {
       <div className="App no-active no-focus">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <h1 className="App-title">Reactstrap Color Selector</h1>
+        <h1 className="App-title">React Color Selector</h1>
       </header>
       <div className="color-picker-container">
         <Dropdown style={{width: "350px", height: "50px", margin: "auto"}} isOpen={this.state.dropdownOpen} toggle={this.toggle}>
