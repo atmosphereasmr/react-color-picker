@@ -12,8 +12,8 @@ export default class App extends Component {
     super(props);
     this.state = {
       dropdownOpen: false,
-      color: "#a60303",
-      menuTitle: "Red",
+      color: "#ff69b4",
+      menuTitle: "Pink",
       menuTextColor: "white",
       colors: colors,
       darkColors: darkColors
