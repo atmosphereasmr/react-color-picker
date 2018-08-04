@@ -20,7 +20,7 @@ module.exports = [
       hex: "#ff8a00"
     },
     {
-      title: "Burnt Orange",
+      title: "Dark Orange",
       textColor: "white",
       hex: "#bf6b04"
     },
